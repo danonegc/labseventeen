@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myModule" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RichMansReddit</title>
+    <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
+  </head>
+  <body ng-controller="hardCtrl">
+
+    <reddit-post ng-repeat="post in posts"></reddit-post>
+
+    <a href="partials/input.html">Search Reddit!</a>
+    <a href="partials/output.html">Check The Results!</a>
+
+
+
+
+    <ng-view></ng-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src="app/module.js"></script>
+    <!-- <script src="app/config.js"></script> -->
+    <script src="controllers/input-ctrl.js"></script>
+    <script src="controllers/output-ctrl.js"></script>
+    <script src="service.js"></script>
+    <script src="directive.js"></script>
+  </body>
+</html>
